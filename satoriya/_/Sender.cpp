@@ -131,7 +131,7 @@ bool Sender::send(int mode,const char* iFormat, ...)
 	
 	va_list	theArgPtr;
 	va_start(theArgPtr, iFormat);
-	_vsnprintf(theBuf, SenderConst::MAX, iFormat, theArgPtr);
+	vsnprintf(theBuf, SenderConst::MAX, iFormat, theArgPtr);
 	va_end(theArgPtr);
 
 	// \\n‚ð\r\n‚É’u‚«Š·‚¦‚é
